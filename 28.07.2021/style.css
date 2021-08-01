@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: block;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    transition: ease-in-out 1s;
+    padding-left: 10px;
+}
+header a:hover {
+    color: crimson;
+    background-color: cyan;
+}
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+aside {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+main aside input:focus, textarea:focus {
+    background-color: chartreuse;
+}
+aside hr {
+    width: 95%;
+}
+aside form {
+    position: relative;
+    left: 10px;
+}
+aside h3 {
+    text-align: center;
+}
+.slika {
+    position: relative;
+    width: 100%;
+}
+aside .slika img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+aside label {
+    color: brown;
+}
+.radio {
+    color: black;
+}
+aside .kurs {
+    color: black;
+}
+.button {
+    width: 100px;
+    height: 30px;
+    transition: ease-in-out 1s;
+}
+.button:hover {
+    background-color: coral;
+}
+section {
+    float: right;
+    position: relative;
+    width: 80%;
+    height: 100%;
+
+}
+section ul {
+    list-style: none;
+}
+section p {
+    text-align: justify;
+    margin-right: 5px;
+}
+section img {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
