@@ -85,7 +85,7 @@ if(dan >= 0 || dan <= 7) {
 let kolicina = 1500; //grami
 let cena = 20; //po kg
 let kolicinaNovca = 280;
-let ukupnaCena = kolicina / 100 * 20; //u kg
+let ukupnaCena = kolicina / 1000 * 20; //u kg
 console.log(`Ukupna cena proizvoda je ${ukupnaCena} dinara`)
 
 if (kolicina > 0 && kolicinaNovca >= ukupnaCena) {
