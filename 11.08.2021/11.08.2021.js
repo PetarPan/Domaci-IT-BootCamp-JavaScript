@@ -1,6 +1,6 @@
 /** @format */
 
-//1
+//1 suma i proizvod niza
 {
   let niz = [1, 2, 3, 4, 5, 6, 7];
   let sum = 0;
@@ -34,7 +34,8 @@
 }
 
 //3 uklonjen
-//4
+
+//4 FizzBuzz
 {
   let broj = 75;
 
@@ -51,7 +52,7 @@
   }
 }
 
-//5
+//5 Zamena vrednosti
 {
   let a = 1;
   let b = 2;
