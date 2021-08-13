@@ -19,15 +19,15 @@
 //2 isNan NEKOMPLETAN!!!
 
 {
-  var niz = [null, NaN,7, 1, "sd", undefined, NaN];
+  var niz = [null, NaN,7, 1, "sd", undefined, NaN]; //proveri u konzoli
+  let pomniz = [];
   function check(niz) {
     for (i = 0; i < niz.length; i++) {
-      if (typeof niz[i] === "number" && isNaN(niz[i])) {
-        return ("Element " + i + " is NaN");
-      }
-      if (typeof niz[i] === "undefined") {
-        return ("Element " + i + " is undefined");
-      }
+    
+
+     if(niz[i]){
+       pomniz.push(niz[i])
+     }
     }
   }
   console.log(check(niz));
@@ -74,3 +74,8 @@ if (a == obrnuto)
     console.log("Palindrom");
 else
     console.log("Nije palindrom");
+
+
+
+    
+   
