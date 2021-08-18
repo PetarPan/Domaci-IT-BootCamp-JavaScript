@@ -89,6 +89,10 @@ console.log("**********izdvajanje najjaceg***********");
 pokemoni.sort((a, b) => {
   return b.karakteristike.napad - a.karakteristike.napad;
 });
+pokemoni.forEach((pokemon) => {
+   console.log((pokemon.ime + " " + pokemon.karakteristike.napad));
+    
+})
 
 /* pokemoni.forEach( (e) => {
     //kopija pokemona u novom nizu pa iz tog niza uzimamo max
@@ -101,6 +105,9 @@ pokemoni.sort((a, b) => {
 // console.log(x + y);
 //console.log(`${e.ime} ${e.karakteristike.napad}`);
 
+
+
+
 //za sredu 18.08.2021.
 
 const levo = document.querySelector(".levo");
@@ -110,44 +117,60 @@ const protivnik = document.querySelector(".protivnik");
 const listaIzbor = document.querySelector(".listaIzbor");
 const listaProtivnik = document.querySelector(".listaProtivnik");
 
+
 izbor.addEventListener("click", () => {
-  for (i = 0; i < pokemoni.length; i++) {
+  pokemoni.forEach((pokemon) => {
     const btn = document.createElement("button");
-    btn.innerHTML = pokemoni[i].ime + "<br>";
-    console.log(pokemoni[i]);
-    btn.addEventListener("click", () => {
-      const divPok = document.createElement("div");
+    btn.innerHTML = pokemon.ime + "<br>";
 
-      pokemoni.forEach(() => {
-        divPok.innerHTML = pokemoni.vrsta;
-        listaIzbor.append(divPok);
-        btn.remove();
-      });
+    btn.addEventListener("click", () => {
+      let p = document.createElement("p");
+
+      p.innerHTML = `
+      Ime: ${pokemon.ime} <br> 
+      Vrsta: ${pokemon.vrsta} <br> 
+      Sposobnosti: ${pokemon.sposobnosti} <br> 
+      Karakteristike: <br>
+      Napad: ${pokemon.karakteristike.napad} <br>
+      Odbrana: ${pokemon.karakteristike.odbrana} <br>
+      Brzina: ${pokemon.karakteristike.brzina}`;
       
+      listaIzbor.append(p);
+      btn.remove();
     });
+   
+
     listaIzbor.append(btn);
-    izbor.remove();
-  }
+  });
+
+  izbor.remove();
 });
 
-
-
-
+//protivnik
 protivnik.addEventListener("click", () => {
-  for (i = 0; i < pokemoni.length; i++) {
-    const btn = document.createElement("button");
-    btn.innerHTML = pokemoni[i].ime + "<br>";
-    btn.addEventListener("click", () => {
-      const divPok = document.createElement("div");
-
-      pokemoni.forEach(() => {
-        divPok.innerHTML = pokemoni.vrsta;
-        listaProtivnik.append(divPok);
+    pokemoni.forEach((pokemon) => {
+      const btn = document.createElement("button");
+      btn.innerHTML = pokemon.ime + "<br>";
+  
+      btn.addEventListener("click", () => {
+        let p = document.createElement("p");
+  
+        p.innerHTML = `
+        Ime: ${pokemon.ime} <br> 
+        Vrsta: ${pokemon.vrsta} <br> 
+        Sposobnosti: ${pokemon.sposobnosti} <br> 
+        Karakteristike: <br>
+        Napad: ${pokemon.karakteristike.napad} <br>
+        Odbrana: ${pokemon.karakteristike.odbrana} <br>
+        Brzina: ${pokemon.karakteristike.brzina}`;
+        
+        listaProtivnik.append(p);
         btn.remove();
       });
-
+     
+  
+      listaProtivnik.append(btn);
     });
-    listaProtivnik.append(btn);
+  
     protivnik.remove();
-  }
-});
+  });
