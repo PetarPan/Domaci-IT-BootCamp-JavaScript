@@ -1,0 +1,105 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kupci</title>
+  </head>
+  <body>
+    <div class="form-style-2">
+      <form id="forma">
+        <label for="kupac">
+          <span>Купац: <span class="required">*</span></span>
+          <br />
+        </label>
+        <input type="text" class="input-field" name="kupac" id="kupac" />
+        <span class="error"><p id="name_error"></p></span>
+        <br />
+
+        <label for="surname">
+          <span>Surname: <span class="required">*</span></span>
+          <br />
+        </label>
+        <input type="text" class="input-field" name="surname" id="surname" />
+        <span class="error"><p id="surname_error"></p></span>
+        <br>
+        <label for="password">
+          <br />
+          <span>Password: <span class="required">*</span></span>
+        </label>
+        
+        <br />
+        <input type="text" class="input-field" name="password" id="password" />
+        <br />
+        <span class="error"><p id="password_error"></p></span>
+        <label for="confirmpassword">
+          <br />
+          <span>Confirm Password: <span class="required">*</span></span>
+        </label>
+        <br />
+        <input type="text" class="input-field" name="confirm" id="confirm" />
+        <br />
+        <span class="error"><p id="reenterPassword_error"></p></span>
+        <br>
+        <!-- odabir kursa -->
+        <label>Kurs</label> <br />
+
+        <input
+          class="checkBox"
+          type="checkbox"
+          id="kurs1"
+          name="kurs1"
+          value="HTML"
+        />
+        <label for="kurs1"> HTML</label><br />
+        <input
+          class="checkBox"
+          type="checkbox"
+          id="kurs2"
+          name="kurs2"
+          value="CSS"
+        />
+        <label for="kurs2"> CSS</label><br />
+        <input
+          class="checkBox"
+          type="checkbox"
+          id="kurs3"
+          name="kurs3"
+          value="JavaScript"
+        />
+        <label for="kurs3"> JavaScript</label><br />
+        <span class="error"><p id="checkbox_error"></p></span>
+        <!-- odabir grada -->
+        <br />
+        
+        <br />
+        <select name="city" class="select-field" id="select-grad"></select>
+        <br />
+
+        <!--pol-->
+        <label>Pol</label>
+        <br>
+        <label class="radio">
+          <input type="radio" name="pol" id="pol" value="muski"/>Muski
+        </label>
+        <span class="error"><p id="pol_error"></p></span>
+        <label class="radio">
+          <input type="radio" name="pol" id="pol" value="zenski" />Zenski
+        </label>
+        <span class="error"><p id="pol_error"></p></span>
+        <!-- dugme -->
+        <label><span> </span><input type="submit" value="Unesi" /></label>
+      </form>
+    </div>
+
+    <hr />
+    <div id="item-container">
+      <h1>Kupci:</h1>
+      
+    </div>
+
+    <script src="25.08.2021.js"></script>
+  </body>
+</html>
