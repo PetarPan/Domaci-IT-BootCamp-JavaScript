@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App za racunanje troskova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <h2>Dostupan budzet u septembru 2021. godine</h2>
+            <div class="bilans"></div>
+            <div class="ukupni-prihod"></div>
+            <div class="ukupni-rashod">-</div>
+        </section>
+    </header>
+    <main>
+        <section class="unos">
+            <select id="opcija">
+                <option value="prihod" for='opcija'>Prihod</option>
+                <option value="rashod" for='opcija'>Rashod</option>
+            </select>
+            <label for="opis"><input type="text" id="opis" placeholder="Opis transakcije"></label>
+            <label for="iznos"><input type="text" id="iznos" placeholder="Iznos"></label>
+            <button>Unesi</button>
+        </section>
+        <section class="prihod-rashod">
+
+            <div class="prihod">
+
+            </div>
+
+            <div class="rashod">
+                <p>  <span class="procenatRashod"></span> </p>
+            </div>    
+        </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

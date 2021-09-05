@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* H E A D E R */
+
+header {
+    width: 100%;
+    height: 40vh;
+    background-color: #ded5d5;
+    color: white;
+    text-align: center;
+}
+
+header section {
+    width: 100%;
+    background-color: #858585;
+    margin: 0 auto;
+}
+header section .bilans {
+    width: 50%;
+    height: 10vh;
+    background-color: transparent;
+    margin: auto;
+    padding: 10px;
+    line-height: 10vh;
+    font-size: 3rem;
+}
+header section .ukupni-prihod {
+    width: 50%;
+    height: 5vh;
+    font-size: 1.5em;
+    line-height: 5vh;
+    background-color: #44cc29;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    
+}
+header section .ukupni-rashod {
+    width: 50%;
+    height: 5vh;
+    font-size: 1.5em;
+    line-height: 5vh;
+    background-color: #f54545;
+    margin: auto;
+    padding: 10px;
+}
+header section .ukupni-rashod p .proc {
+    color: black;
+    background-color: white;
+    opacity: .5;
+    font-size: 15px;
+    line-height: 2.5vh;
+}
+
+/* M A I N */
+
+main {
+    width: 100%;
+    height: 60vh;
+    background-color:wheat;
+    text-align: center;
+}
+main .unos {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ded5d5;
+}
+main .unos select, label {
+    padding: 0 10px;
+    background-color: #ded5d5;
+}
+main .prihod-rashod {
+    width: 100%;
+    height: 81%;
+   background-color: whitesmoke;
+}
+.prihod {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.rashod {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+.btnDel {
+    display: none;
+}
+.procenatRashod {
+    display: none;
+}
+.pokazi {
+    display: inline-block;
+}
+.bilans span {
+    display: none;
+}
+.span {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+ul:nth-child(even){
+    background-color: white;
+    border-top: 1px #d9d9d9 solid;
+}
